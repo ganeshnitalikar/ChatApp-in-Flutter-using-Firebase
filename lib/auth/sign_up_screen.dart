@@ -93,8 +93,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
             height: mq.height / 4,
             width: mq.width,
             decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Colors.blue, Colors.blueAccent],
+                gradient: LinearGradient(
+                  colors: [Colors.red.shade300, Colors.red.shade600],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
@@ -334,10 +334,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                             builder: (context) =>
                                                 const LoginScreen()));
                                   },
-                                  child: const Text(
+                                  child: Text(
                                     "Sign-In",
                                     style: TextStyle(
-                                        color: Colors.blue,
+                                        color: Colors.red.shade800,
                                         fontStyle: FontStyle.italic,
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.w500),
@@ -377,7 +377,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Colors.blue,
+                            color: Colors.red.shade700,
                           ),
                           child: const Text(
                             "Create Account",

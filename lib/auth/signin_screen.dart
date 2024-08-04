@@ -82,8 +82,8 @@ class _LoginScreenState extends State<LoginScreen> {
             height: mq.height / 4,
             width: mq.width,
             decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Colors.blue, Colors.blueAccent],
+                gradient: LinearGradient(
+                  colors: [Colors.red.shade300, Colors.red.shade600],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
@@ -262,7 +262,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       width: 150,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
-                                        color: Colors.blue,
+                                        color: Colors.red.shade600,
                                       ),
                                       child: const Text(
                                         "SignIn",
@@ -295,7 +295,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(width: 10),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const SignUpScreen()));
@@ -303,7 +303,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: const Text(
                         "SignUp",
                         style: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.red,
+                            fontStyle: FontStyle.italic,
                             fontSize: 18.0,
                             fontWeight: FontWeight.w500),
                       ),

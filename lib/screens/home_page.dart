@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, unnecessary_string_escapes
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../auth/signin_screen.dart';
@@ -91,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     Size mq = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: const Color(0xff9C95DC),
+      backgroundColor: Colors.red.shade300,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: const Text(
@@ -102,11 +103,12 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_) {
-                  return const LoginScreen();
-                }));
+                FirebaseAuth.instance.signOut().then((value) {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (_) => const LoginScreen()));
+                });
               },
-              icon: const Icon(Icons.arrow_back)),
+              icon: const Icon(Icons.logout)),
           IconButton(
               onPressed: () {
                 setState(() {
