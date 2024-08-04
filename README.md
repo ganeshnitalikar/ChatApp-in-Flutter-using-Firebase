@@ -18,19 +18,19 @@ In today's interconnected world, instant messaging is essential. **Chatter** off
 Here are some screenshots of the app:
 
 - **Home Screen**
-  ![Home Screen](assets/screenshots/home_screen.png)
+  ![Home Screen](assets/screenshots/home.png)
 
 - **Login Screen**
-  ![Login Screen](assets/screenshots/login_screen.png)
+  ![Login Screen](assets/screenshots/login.png)
 
 - **Signup Screen**
-  ![Signup Screen](assets/screenshots/signup_screen.png)
+  ![Signup Screen](assets/screenshots/signup.png)
 
 - **Search Screen**
-  ![Search Screen](assets/screenshots/search_screen.png)
+  ![Search Screen](assets/screenshots/search.png)
 
 - **Chat Screen**
-  ![Chat Screen](assets/screenshots/chat_screen.png)
+  ![Chat Screen](assets/screenshots/chatscreen.png)
 
 ## Getting Started
 
